@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Bomweb/static/css/main.5fc46997.css",
+    "main.js": "/Bomweb/static/js/main.30f4bb48.js",
+    "static/js/453.58c4d8ad.chunk.js": "/Bomweb/static/js/453.58c4d8ad.chunk.js",
+    "static/media/inventory.jpg": "/Bomweb/static/media/inventory.151b0d47d6e54946eb79.jpg",
+    "static/media/laravel.jpg": "/Bomweb/static/media/laravel.c63bb7246b5d2be03223.jpg",
+    "static/media/fintech.jpg": "/Bomweb/static/media/fintech.9312b49117ea8402d785.jpg",
+    "static/media/electric.jpg": "/Bomweb/static/media/electric.91d945984400b67a7fd9.jpg",
+    "static/media/trans.jpg": "/Bomweb/static/media/trans.5396d3f623679aecd9ee.jpg",
+    "index.html": "/Bomweb/index.html",
+    "main.5fc46997.css.map": "/Bomweb/static/css/main.5fc46997.css.map",
+    "main.30f4bb48.js.map": "/Bomweb/static/js/main.30f4bb48.js.map",
+    "453.58c4d8ad.chunk.js.map": "/Bomweb/static/js/453.58c4d8ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fc46997.css",
+    "static/js/main.30f4bb48.js"
+  ]
+}
