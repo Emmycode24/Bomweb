@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import "./App.css"
 const plans = [
   {
     name: "Free",
@@ -36,15 +36,16 @@ const Pricing = () => {
   return (
     <motion.section
       id="pricing"
-      className="py-24 sm:py-32 bg-white"
+      className="py-24 sm:py-32 features-bg"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
+        <div className="absolute inset-0 bg-black/30" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <h2 className="text-lg font-semibold text-blue-600">Pricing</h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl font-weight-50px">
           Simple, scalable plans for every team
         </p>
 

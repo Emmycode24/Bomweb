@@ -1,6 +1,7 @@
 import React from "react";
-import { Layers, ListTree, Database, Users } from "lucide-react";
+import { Layers, ListTree, Database } from "lucide-react";
 import { motion } from "framer-motion";
+import "./App.css";
 
 const features = [
   {
@@ -16,12 +17,6 @@ const features = [
     icon: Database,
   },
   {
-    name: "Collaboration Tools",
-    description:
-      "Enable engineers, operators, and admins to work seamlessly on the same product structure.",
-    icon: Users,
-  },
-  {
     name: "Smart Import/Export",
     description:
       "Import BOM data from spreadsheets or export it to ERP systems with a single click.",
@@ -29,18 +24,35 @@ const features = [
   },
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, scale: 0.9, y: 30 },
+  visible: (i) => ({
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay: i * 0.15, // small staggered delay for each card
+      ease: "easeOut",
+    },
+  }),
+};
+
 const Features = () => {
   return (
     <motion.section
       id="features"
-      className="py-24 sm:py-32 bg-gray-50"
+      className="py-24 sm:py-32 bg-white"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-        <h1 className="text-lg font-bold text-blue-600">Everything you need</h1>
+      <div className="mx-auto max-w-6xl px-6 text-center">
+        {/* Section Header */}
+        <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wide">
+          Everything you need
+        </h2>
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Powerful tools for structured BOM management
         </p>
@@ -49,15 +61,24 @@ const Features = () => {
           dependencies — all in one platform.
         </p>
 
-        <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Feature Grid */}
+        <div className="mt-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-3 text-left">
           {features.map((feature, index) => (
-            <div key={index} className="text-left">
-              <div className="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-lg mb-4 mx-auto">
+            <motion.div
+              key={index}
+              className="flex flex-col items-start text-left p-6 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-all duration-300"
+              variants={cardVariants}
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div className="flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-lg mb-4">
                 <feature.icon className="h-6 w-6" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900">{feature.name}</h3>
-              <p className="mt-2 text-sm text-gray-600">{feature.description}</p>
-            </div>
+              <p className="mt-2 text-sm text-gray-600 leading-6">{feature.description}</p>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -66,5 +87,7 @@ const Features = () => {
 };
 
 export default Features;
+
+
 
 

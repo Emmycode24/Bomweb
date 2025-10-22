@@ -30,13 +30,13 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden lg:flex items-center space-x-4">
-          <a href="#signin" className="text-sm font-semibold text-gray-700 hover:text-blue-600">
+          <a href="#signin" className="text-sm font-bold text-gray-700 hover:text-blue-600 font-weight-medium">
             Sign in
           </a>
           <a
             href="#get-started"
-            className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700"
-          >
+            className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 font-weight-bold" 
+           >
             Get started
           </a>
         </div>

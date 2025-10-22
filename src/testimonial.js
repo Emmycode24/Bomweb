@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: "Michael Adewale",
+    name: "Melvin Cambell",
     role: "Mechanical Engineer at AutoTech",
     quote:
       "BOMify has revolutionized how we handle our product structures. Managing subassemblies and updates is now effortless and transparent.",
@@ -19,7 +19,7 @@ const testimonials = [
       "https://randomuser.me/api/portraits/women/45.jpg",
   },
   {
-    name: "James Okoro",
+    name: "James Smith",
     role: "Manufacturing Manager at TechBuild",
     quote:
       "The structured hierarchy and real-time updates helped us cut errors by 40%. I can’t imagine managing BOMs any other way.",

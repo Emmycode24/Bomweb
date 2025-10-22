@@ -1,23 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 import inventory from "./inventory.jpg"
+import "./App.css";
 
 const Hero = () => {
   return (
     <motion.section
       id="hero"
-      className="pt-32 pb-16 text-center bg-white"
+      className="pt-32 pb-16 text-center bg-blue"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
+
       <div className="mx-auto max-w-3xl">
         <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Simplify your <span className="text-blue-600">Bill of Materials</span> management.
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          BOMify helps you manage product structures, components, and revisions with ease.  
+          BOMify helps you manage product structures, components, and revisions with ease.
           Save time, reduce errors, and keep your team aligned.
         </p>
         <div className="mt-10 flex justify-center gap-x-6">
@@ -45,4 +47,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
