@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/Bomweb/static/css/main.b9b5a914.css",
-    "main.js": "/Bomweb/static/js/main.4a047cd6.js",
+    "main.css": "/Bomweb/static/css/main.524d8bf8.css",
+    "main.js": "/Bomweb/static/js/main.f28e8ab0.js",
     "static/js/453.58c4d8ad.chunk.js": "/Bomweb/static/js/453.58c4d8ad.chunk.js",
     "static/media/background-call-to-action.jpg": "/Bomweb/static/media/background-call-to-action.2d20904390abccc5771a.jpg",
-    "static/media/background-faqs.jpg": "/Bomweb/static/media/background-faqs.503bf36a8ed95ddfdd25.jpg",
+    "static/media/profitloss.jpg": "/Bomweb/static/media/profitloss.6cd5e864f64f92c698ee.jpg",
+    "static/media/invent.jpg": "/Bomweb/static/media/invent.0b20fd279c3020018867.jpg",
     "static/media/inventory.jpg": "/Bomweb/static/media/inventory.151b0d47d6e54946eb79.jpg",
+    "static/media/contact.jpg": "/Bomweb/static/media/contact.e98f6605e96caf60f705.jpg",
     "static/media/laravel.jpg": "/Bomweb/static/media/laravel.c63bb7246b5d2be03223.jpg",
     "static/media/fintech.jpg": "/Bomweb/static/media/fintech.9312b49117ea8402d785.jpg",
     "static/media/electric.jpg": "/Bomweb/static/media/electric.91d945984400b67a7fd9.jpg",
     "static/media/trans.jpg": "/Bomweb/static/media/trans.5396d3f623679aecd9ee.jpg",
     "index.html": "/Bomweb/index.html",
-    "main.b9b5a914.css.map": "/Bomweb/static/css/main.b9b5a914.css.map",
-    "main.4a047cd6.js.map": "/Bomweb/static/js/main.4a047cd6.js.map",
+    "main.524d8bf8.css.map": "/Bomweb/static/css/main.524d8bf8.css.map",
+    "main.f28e8ab0.js.map": "/Bomweb/static/js/main.f28e8ab0.js.map",
     "453.58c4d8ad.chunk.js.map": "/Bomweb/static/js/453.58c4d8ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9b5a914.css",
-    "static/js/main.4a047cd6.js"
+    "static/css/main.524d8bf8.css",
+    "static/js/main.f28e8ab0.js"
   ]
 }
