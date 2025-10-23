@@ -1,28 +1,79 @@
 import React, { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const scrollToSection = (id) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    } else {
+      const section = document.getElementById(id);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo */}
-        <a href="#hero" className="text-2xl font-bold text-blue-600">
-          BOMify
-        </a>
+        
+        {/* LEFT SIDE: Logo + Links */}
+        <div className="flex items-center gap-10">
+          <Link
+            to="/"
+            className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition"
+          >
+            BOMify
+          </Link>
 
-        {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8 text-gray-800 font-medium">
-          <a href="#features" className="hover:text-blue-600 transition">Features</a>
-          <a href="#pricing" className="hover:text-blue-600 transition">Pricing</a>
-          <a href="#get-started" className="hover:text-blue-600 transition">Get Started</a>
+          {/* Desktop Links (Left-Aligned) */}
+          <div className="hidden md:flex items-center gap-8 text-gray-800 font-medium">
+            <button
+              onClick={() => scrollToSection("hero")}
+              className="hover:text-blue-600 transition"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => scrollToSection("features")}
+              className="hover:text-blue-600 transition"
+            >
+              Features
+            </button>
+            <button
+              onClick={() => scrollToSection("pricing")}
+              className="hover:text-blue-600 transition"
+            >
+              Pricing
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Button */}
+        {/* RIGHT SIDE: Auth Buttons */}
+        <div className="hidden md:flex items-center gap-6">
+          <Link to="/signin" className="hover:text-blue-600 transition font-medium">
+            Sign In
+          </Link>
+          <Link
+            to="/signup"
+            className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition font-medium"
+          >
+            Get Started
+          </Link>
+        </div>
+
+        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden p-2 rounded-md text-gray-800 hover:bg-gray-100"
           onClick={toggleMenu}
@@ -39,15 +90,34 @@ const Navbar = () => {
           className="md:hidden bg-white shadow-lg border-t border-gray-200"
         >
           <div className="flex flex-col px-6 py-4 space-y-4 text-gray-800 font-medium">
-            <a href="#features" onClick={toggleMenu} className="hover:text-blue-600">
+            <button
+              onClick={() => scrollToSection("hero")}
+              className="hover:text-blue-600 text-left"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => scrollToSection("features")}
+              className="hover:text-blue-600 text-left"
+            >
               Features
-            </a>
-            <a href="#pricing" onClick={toggleMenu} className="hover:text-blue-600">
+            </button>
+            <button
+              onClick={() => scrollToSection("pricing")}
+              className="hover:text-blue-600 text-left"
+            >
               Pricing
-            </a>
-            <a href="#get-started" onClick={toggleMenu} className="hover:text-blue-600">
+            </button>
+            <Link to="/signin" onClick={toggleMenu} className="hover:text-blue-600">
+              Sign In
+            </Link>
+            <Link
+              to="/signup"
+              onClick={toggleMenu}
+              className="bg-blue-600 text-white px-4 py-2 rounded-full text-center hover:bg-blue-700"
+            >
               Get Started
-            </a>
+            </Link>
           </div>
         </motion.div>
       )}
@@ -56,5 +126,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 

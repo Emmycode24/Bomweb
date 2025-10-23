@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./index.css"
 
 const faqs = [
   {
@@ -40,14 +41,14 @@ const FAQ = () => {
       viewport={{ once: true }}
     >
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <h1 className="text-lg font-semibold text-blue-600 text-center">
+        <h1 className="text-lg font-bold text-blue-600 text-center">
           Frequently Asked Questions
         </h1>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 text-center sm:text-4xl">
+        <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 text-center sm:text-4xl">
           Everything you need to know
         </p>
 
-        <dl className="mt-16 space-y-8">
+        <dl className="mt-16 space-y-8 font-inter">
           {faqs.map((faq, i) => (
             <div key={i}>
               <dt className="text-lg font-semibold text-gray-900">{faq.question}</dt>
