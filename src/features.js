@@ -1,6 +1,6 @@
 import React, { useId, useState } from "react";
 import clsx from "clsx";
-import inventoryImg from "./invent.jpg";
+import inventoryImg from "./inventory.jpg";
 import contactsImg from "./contact.jpg";
 import profitLossImg from "./profitloss.jpg";
 

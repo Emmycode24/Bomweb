@@ -14,8 +14,8 @@ import RootLayout from "./rootlayout";
 
 function App() {
   return (
-    <RootLayout>
-      <Router>
+    <Router>
+      <RootLayout>
         <Navbar />
         <Routes>
           <Route
@@ -35,11 +35,12 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
-      </Router>
-    </RootLayout>
+      </RootLayout>
+    </Router>
   );
 }
 
 export default App;
+
 
 
