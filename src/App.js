@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Navbar from "./navbar";
 import Hero from "./hero";
 import Features from "./features";
@@ -18,6 +23,10 @@ function App() {
       <RootLayout>
         <Navbar />
         <Routes>
+          {/* Redirect any unknown route to home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+
+          {/* Main homepage */}
           <Route
             path="/"
             element={
@@ -32,6 +41,8 @@ function App() {
               </>
             }
           />
+
+          {/* Auth pages */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
         </Routes>
@@ -41,6 +52,3 @@ function App() {
 }
 
 export default App;
-
-
-
