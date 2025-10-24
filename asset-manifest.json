@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bomweb/static/css/main.524d8bf8.css",
-    "main.js": "/Bomweb/static/js/main.aadc8e8b.js",
+    "main.js": "/Bomweb/static/js/main.acadcccf.js",
     "static/js/453.58c4d8ad.chunk.js": "/Bomweb/static/js/453.58c4d8ad.chunk.js",
     "static/media/background-call-to-action.jpg": "/Bomweb/static/media/background-call-to-action.2d20904390abccc5771a.jpg",
     "static/media/profitloss.jpg": "/Bomweb/static/media/profitloss.6cd5e864f64f92c698ee.jpg",
@@ -13,11 +13,11 @@
     "static/media/trans.jpg": "/Bomweb/static/media/trans.5396d3f623679aecd9ee.jpg",
     "index.html": "/Bomweb/index.html",
     "main.524d8bf8.css.map": "/Bomweb/static/css/main.524d8bf8.css.map",
-    "main.aadc8e8b.js.map": "/Bomweb/static/js/main.aadc8e8b.js.map",
+    "main.acadcccf.js.map": "/Bomweb/static/js/main.acadcccf.js.map",
     "453.58c4d8ad.chunk.js.map": "/Bomweb/static/js/453.58c4d8ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.524d8bf8.css",
-    "static/js/main.aadc8e8b.js"
+    "static/js/main.acadcccf.js"
   ]
 }
