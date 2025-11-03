@@ -41,10 +41,10 @@ const FAQ = () => {
       viewport={{ once: true }}
     >
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <h1 className="text-lg font-bold text-blue-600 text-center">
+        <h1 className="text-lg font-size-600px text-blue-600 text-left font-inter">
           Frequently Asked Questions
         </h1>
-        <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 text-center sm:text-4xl">
+        <p className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 text-left sm:text-4xl">
           Everything you need to know
         </p>
 

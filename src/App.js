@@ -8,7 +8,7 @@ import {
 import Navbar from "./navbar";
 import Hero from "./hero";
 import Features from "./features";
-import LogoCloud from "./cloudlogo";
+import  SecondaryFeatures from "./secondary-feature"
 import Testimonials from "./testimonial";
 import Pricing from "./pricing";
 import FAQ from "./faq";
@@ -32,8 +32,8 @@ function App() {
             element={
               <>
                 <Hero />
-                <LogoCloud />
-                <Features />
+                  <Features />
+                <SecondaryFeatures />
                 <Testimonials />
                 <Pricing />
                 <FAQ />
