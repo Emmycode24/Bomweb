@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/Bomweb/static/css/main.524d8bf8.css",
-    "main.js": "/Bomweb/static/js/main.acadcccf.js",
+    "main.css": "/Bomweb/static/css/main.baf257e4.css",
+    "main.js": "/Bomweb/static/js/main.8fcd49b2.js",
     "static/js/453.58c4d8ad.chunk.js": "/Bomweb/static/js/453.58c4d8ad.chunk.js",
+    "static/media/background-features.jpg": "/Bomweb/static/media/background-features.8ba630fe852a0cfc2c76.jpg",
     "static/media/background-call-to-action.jpg": "/Bomweb/static/media/background-call-to-action.2d20904390abccc5771a.jpg",
+    "static/media/analytics.jpg": "/Bomweb/static/media/analytics.dfe1619fe92bf9966da6.jpg",
     "static/media/profitloss.jpg": "/Bomweb/static/media/profitloss.6cd5e864f64f92c698ee.jpg",
+    "static/media/suppliers.jpg": "/Bomweb/static/media/suppliers.b8a0fa81312ad3119d57.jpg",
     "static/media/inventory.jpg": "/Bomweb/static/media/inventory.151b0d47d6e54946eb79.jpg",
     "static/media/contact.jpg": "/Bomweb/static/media/contact.e98f6605e96caf60f705.jpg",
+    "static/media/reporting.jpg": "/Bomweb/static/media/reporting.62a8fb0c8304c9f273b0.jpg",
     "static/media/laravel.jpg": "/Bomweb/static/media/laravel.c63bb7246b5d2be03223.jpg",
     "static/media/fintech.jpg": "/Bomweb/static/media/fintech.9312b49117ea8402d785.jpg",
     "static/media/electric.jpg": "/Bomweb/static/media/electric.91d945984400b67a7fd9.jpg",
     "static/media/trans.jpg": "/Bomweb/static/media/trans.5396d3f623679aecd9ee.jpg",
     "index.html": "/Bomweb/index.html",
-    "main.524d8bf8.css.map": "/Bomweb/static/css/main.524d8bf8.css.map",
-    "main.acadcccf.js.map": "/Bomweb/static/js/main.acadcccf.js.map",
+    "main.baf257e4.css.map": "/Bomweb/static/css/main.baf257e4.css.map",
+    "main.8fcd49b2.js.map": "/Bomweb/static/js/main.8fcd49b2.js.map",
     "453.58c4d8ad.chunk.js.map": "/Bomweb/static/js/453.58c4d8ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.524d8bf8.css",
-    "static/js/main.acadcccf.js"
+    "static/css/main.baf257e4.css",
+    "static/js/main.8fcd49b2.js"
   ]
 }
