@@ -18,6 +18,9 @@ export default function Footer() {
           <a href="#pricing" className="hover:text-blue-700 transition">
             Pricing
           </a>
+          <a href="#hero" className="hover:text-blue-700 transition">
+            Home
+          </a>
         </nav>
 
         {/* Social Icons */}

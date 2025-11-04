@@ -15,7 +15,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative bg-gradient-to-b from-blue-50 via-white to-blue-50 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-blue-50 via-white to-blue-50 overflow-hidden" id="hero">
       {/* Decorative blue SVG wave background */}
       <svg
         className="absolute top-0 left-0 w-full h-64 text-blue-100"
