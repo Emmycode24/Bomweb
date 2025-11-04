@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Bomweb/static/css/main.baf257e4.css",
-    "main.js": "/Bomweb/static/js/main.8fcd49b2.js",
+    "main.js": "/Bomweb/static/js/main.c60f79ec.js",
     "static/js/453.58c4d8ad.chunk.js": "/Bomweb/static/js/453.58c4d8ad.chunk.js",
     "static/media/background-features.jpg": "/Bomweb/static/media/background-features.8ba630fe852a0cfc2c76.jpg",
     "static/media/background-call-to-action.jpg": "/Bomweb/static/media/background-call-to-action.2d20904390abccc5771a.jpg",
@@ -17,11 +17,11 @@
     "static/media/trans.jpg": "/Bomweb/static/media/trans.5396d3f623679aecd9ee.jpg",
     "index.html": "/Bomweb/index.html",
     "main.baf257e4.css.map": "/Bomweb/static/css/main.baf257e4.css.map",
-    "main.8fcd49b2.js.map": "/Bomweb/static/js/main.8fcd49b2.js.map",
+    "main.c60f79ec.js.map": "/Bomweb/static/js/main.c60f79ec.js.map",
     "453.58c4d8ad.chunk.js.map": "/Bomweb/static/js/453.58c4d8ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baf257e4.css",
-    "static/js/main.8fcd49b2.js"
+    "static/js/main.c60f79ec.js"
   ]
 }
